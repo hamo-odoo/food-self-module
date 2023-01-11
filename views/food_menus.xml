@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="food_root_menu" name="Food">
+        <menuitem id="food_resturant_menu" name="Resturant">
+            <menuitem id="resturant_tree_menu" name="Resturant" action="food_resturant_view"/>
+        </menuitem>
+    </menuitem>
+
+</odoo>

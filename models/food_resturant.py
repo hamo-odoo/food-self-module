@@ -10,4 +10,4 @@ class FoodResturant(models.Model):
     pincode=fields.Integer(required=True)
     owner_id=fields.Many2one("res.users")
     staff_ids=fields.Many2many("res.users")
-    tag_ids=fields.Many2Many2("food.resturant.tag")
+    tag_ids=fields.Many2many("food.resturant.tag")
