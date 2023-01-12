@@ -6,5 +6,5 @@ class FoodItem(models.Model):
     name=fields.Char(required=True)
     price=fields.Integer(required=True)
     category_id=fields.Many2one("food.item.category")
-    menu_id=fields.Many2one("food.menu")
-    type=fields.Selection(selection=[('veg','Veg'),('nonveg','Non-Veg')],default="veg")
+    resturant_id=fields.Many2one("food.resturant")
+    type=fields.Selection(selection=[('veg','Veg'),('nonveg','Non-Veg')])

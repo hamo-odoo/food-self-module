@@ -3,7 +3,11 @@
     'version':'0.1',
     'depends':['base'],
     'author':'Harsh Modi',
-    'data':[],
+    'data':[
+        'security/ir.model.access.csv',
+        'views/food_resturant_views.xml',
+        'views/food_menus.xml'
+        ],
     'demo':[],
     'summary':'Food Delivery Service',
     'category':'Service',
