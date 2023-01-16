@@ -1,6 +1,6 @@
 id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
-resturant_manager,Resturant Manager,food_resturant,,1,1,1,1
-resturant_tag_manager,Resturant Tag Manager,food_resturant_tag,,1,1,1,1
-menu_manager,Menu Manager,food_menu,,1,1,1,1
-food_item_manager,Food item Manager,food_item,,1,1,1,1
-food_category_manager,Food category Manager,food_item_category,,1,1,1,1
+resturant_manager,Resturant Manager,model_food_resturant,,1,1,1,1
+resturant_tag_manager,Resturant Tag Manager,model_food_resturant_tag,,1,1,1,1
+menu_manager,Menu Manager,model_food_menu,,1,1,1,1
+food_item_manager,Food item Manager,model_food_item,,1,1,1,1
+food_category_manager,Food category Manager,model_food_item_category,,1,1,1,1
