@@ -12,3 +12,4 @@ class FoodResturant(models.Model):
     staff_ids=fields.Many2many("res.users")
     tag_ids=fields.Many2many("food.resturant.tag","resturant_tag_rel","resturant_id","tag_id")
     item_ids=fields.One2many("food.item","resturant_id")
+    #category_ids=fields.One2many(realted="item_ids.category_id")
