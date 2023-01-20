@@ -4,6 +4,9 @@
         <menuitem id="food_resturant_menu" name="Resturant">
             <menuitem id="resturant_tree_menu" name="Resturant" action="food_resturant_view"/>
         </menuitem>
+        <menuitem id="food_order_menu" name="Order">
+            <menuitem id="order_tree_menu" name="Order" action="food_order_view"/>
+        </menuitem>
     </menuitem>
 
 </odoo>

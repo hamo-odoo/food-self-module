@@ -1,4 +1,4 @@
-from odoo import models,fields
+from odoo import models,fields,api
 
 class FoodResturant(models.Model):
     _name="food.resturant"
@@ -12,3 +12,10 @@ class FoodResturant(models.Model):
     staff_ids=fields.Many2many("res.users")
     tag_ids=fields.Many2many("food.resturant.tag","resturant_tag_rel","resturant_id","tag_id")
     item_ids=fields.One2many("food.item","resturant_id")
+    order_ids=fields.One2many("food.order","resturant_id")
+    total_order=fields.Integer(compute="_compute_total_order")
+    @api.depends("order_ids")
+    def _compute_total_order(self):
+        for record in self:
+            record.total_order=len(record.order_ids)
+    
