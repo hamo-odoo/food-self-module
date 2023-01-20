@@ -6,6 +6,7 @@
     'data':[
         'security/ir.model.access.csv',
         'views/food_resturant_views.xml',
+        'views/food_order_views.xml',
         'views/food_menus.xml'
         ],
     'demo':[],

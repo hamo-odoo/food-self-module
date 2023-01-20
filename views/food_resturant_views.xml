@@ -18,6 +18,7 @@
       <field name="arch" type="xml">
         <form string="Resturant">
           <sheet>
+            
             <h1><field name="name" placeholder="Resturant Name"/></h1>
             <group>
               <group><field name="tag_ids" widget="many2many_tags"/></group>
@@ -59,10 +60,10 @@
         <field name="view_mode">tree,form</field>
         <field name="help" type="html">
           <p class="o_view_nocontent_smiling_face">
-            Define a new property
+            Define a new Resturant
           </p>
           <p>
-            Enter property area,garden orientation,etc.
+            Create a new resturant with its menu to list out
           </p>
         </field>
     </record>
