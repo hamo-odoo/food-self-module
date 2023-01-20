@@ -16,8 +16,12 @@
       <field name="name">food.resturant.form</field>
       <field name="model">food.resturant</field>
       <field name="arch" type="xml">
-        <form string="Resturant">
+        <form string="Resturant">        
           <sheet>
+            <div class="oe_button_box" name="button_box">
+              <button class="oe_stat_button" icon="fa-money" type="action" name="%(food_order_view)d">
+             Total orders: <field name="total_order"/></button>
+            </div>
             
             <h1><field name="name" placeholder="Resturant Name"/></h1>
             <group>
@@ -47,6 +51,9 @@
                       </group>
                     </form>
                   </field>
+                </page>
+                <page name="Order">
+                  <field name="order_ids"/>
                 </page>
               </notebook>
             </group>

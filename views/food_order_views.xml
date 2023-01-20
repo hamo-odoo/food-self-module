@@ -9,6 +9,7 @@
                 <field name="create_date"/>
                 <field name="resturant_id"/>
                 <field name="customer_id"/>
+                <field name="delivery_partner_id"/>
                 <field name="total_price"/>
             </tree>
         </field>
@@ -19,15 +20,16 @@
         <field name="arch" type="xml">
             <form name="food_order_form">
                 <header>
-                    <field widget="statusbar" name="status" />
+                    <field widget="statusbar" name="state" />
+                    <button name="action_state_accepted" states="new" type="object">Accept</button>
+                    <button name="action_state_canceled" states="new,accepted,dp_assigned" type="object">Canceled</button>
                   </header>
                 <sheet>
-                   
                     <group>
-                        <group><field name="id" /></group>
+                        <group><field name="id"/></group>
                         <group><field name="customer_id"/></group>
                         <group><field name="resturant_id"/></group>
-                        <group><field name="status"/></group>
+                        <group><field name="delivery_partner_id" attrs="{'readonly':[('state','not in',('accepted','dp_assigned'))],}"/></group>
                         <notebook>
                             <page name="order_line" string="Order Line">
                                 <field name="order_line_ids">
