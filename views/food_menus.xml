@@ -7,6 +7,9 @@
         <menuitem id="food_order_menu" name="Order">
             <menuitem id="order_tree_menu" name="Order" action="food_order_view"/>
         </menuitem>
+        <menuitem id="food_delivery_menu" name="Delivery">
+            <menuitem id="delivery_partner_tree_menu" name="Delivery Partner" action="food_delivery_partner_view"/>
+        </menuitem>
     </menuitem>
 
 </odoo>

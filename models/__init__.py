@@ -1,1 +1,1 @@
-from . import food_resturant,food_item,food_item_category,food_resturant_tag,food_order,food_order_line
+from . import food_resturant,food_item,food_item_category,food_resturant_tag,food_order,food_order_line,food_delivery_partner
