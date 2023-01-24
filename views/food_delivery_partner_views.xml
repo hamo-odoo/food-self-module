@@ -6,9 +6,26 @@
         <field name="arch" type="xml">
             <form>
                 <sheet>
+                    <h1><field name="name"/></h1>
                     <group>
-                        <group><field name="user_id"/></group>
                         <group><field name="pay_type"/></group>
+                        <group><field name="current_order_assigned"/></group>
+                        <group><field name="active"/></group>
+
+                        <notebook>
+                            <page name="all_order" string="All orders">
+                                <field name="all_order_ids" readonly="True">
+                                    <tree>
+                                        <field name="id"/>
+                                        <field name="create_date"/>
+                                        <field name="resturant_id"/>
+                                        <field name="customer_id"/>
+                                        <field name="state"/>
+                                        <field name="total_price"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
                     </group>
                 </sheet>
             </form>
