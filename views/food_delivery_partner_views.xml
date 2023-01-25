@@ -5,9 +5,14 @@
         <field name="model">food.delivery.partner</field>
         <field name="arch" type="xml">
             <form>
+                <header>
+                    <button type="object" name="action_order_state_picked" attrs="{'invisible':['|',('current_order_assigned','=',[]),'|',('current_order_assigned','=',''),('current_order_state','!=','dp_assigned')]}">Picked</button>
+                    <button type="object" name="action_order_state_delivered" attrs="{'invisible':['|',('current_order_assigned','=',[]),'|',('current_order_assigned','=',''),('current_order_state','!=','picked')]}">Delivered</button>
+                </header>
                 <sheet>
                     <h1><field name="name"/></h1>
                     <group>
+                        <group><field name='current_order_state' invisible="True"/></group>
                         <group><field name="pay_type"/></group>
                         <group><field name="current_order_assigned"/></group>
                         <group><field name="active"/></group>
