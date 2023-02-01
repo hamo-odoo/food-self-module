@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="report_food_order" model="ir.actions.report">
+        <field name="name">Order Report</field>
+        <field name="model">food.order</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">food-self-module.food_order_template</field>
+        <field name="report_file">food-self-module.food_order_template</field>
+        <field name="print_report_name">'Order Id - {}'.format(object.id).replace('/','')</field>
+        <field name="paperformat_id" ref="base.paperformat_us"/>
+        <field name="binding_model_id" ref="model_food_order"/>
+        <field name="binding_type">report</field>
+    </record>
+</odoo>

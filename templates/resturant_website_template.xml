@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="index">
+        <t t-call="website.layout">
+            <t t-set="title">Real Estate</t>
+            Hellp
+        </t>
+    </template>
+    <template id="a">
+        <t t-call="website.layout">
+            <t t-set="title">Resturant</t>
+            <div class="oe_structure">
+                <div class="container">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Tags</th>
+                                <th>Address</th>
+                                <th>City</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                    
+                </div>
+            </div>
+        </t>
+    </template>
+</odoo>
